@@ -2,11 +2,11 @@
 
 pkgname=nightcore
 _pkgname=nightcore
-pkgver=2026.10.01
-pkgrel=4
+pkgver=2026.10.05
+pkgrel=1
 # Full upstream version as written in pyproject.toml (pkgver itself may not
 # contain a hyphen, so the -4 lives here and in pkgrel).
-_pkgver=2026.10.01-4
+_pkgver=2026.10.05-1
 _tag=v${_pkgver}
 pkgdesc="Bit-perfect nightcore/speed/pitch audio tool (ffmpeg, sox, rubberband)"
 arch=('any')
@@ -14,6 +14,7 @@ url="https://git.lusosterone.net/lev/nightcore"
 license=('MIT')
 depends=(
     'python'
+    'python-mutagen'
     'ffmpeg'
     'sox'
     'rubberband'
@@ -22,7 +23,7 @@ depends=(
     'vorbis-tools'
 )
 optdepends=(
-    'lame: MP3 fallback when ffmpeg lacks libmp3lame'
+    'lame: preferred MP3 encoder (ffmpeg libmp3lame fallback)'
     'qaac-wine: High-quality AAC/ALAC encoding (CoreAudio via Wine)'
     'bash-completion: bash completion'
     'zsh: zsh completion'
@@ -32,7 +33,7 @@ conflicts=("$_pkgname-git")
 source=("${_pkgname}-${_pkgver}.tar.gz::${url}/releases/download/${_tag}/${_pkgname}-${_pkgver}.tar.gz"
         "${_pkgname}-${_pkgver}.tar.gz.sig::${url}/releases/download/${_tag}/${_pkgname}-${_pkgver}.tar.gz.sig")
 
-sha256sums=('676cebc230172276fa5cdb9303b23ad89e2e22343ef4d02d30e6a34a17bd2e7b'
+sha256sums=('9e4b1f093e00ebdfe9104233e31a47d416442856fd75a432a2a419dc7dd50dbc'
             'SKIP')
 validpgpkeys=('13EA3CFB9ABC093823509BD668C62637ED987692')
 
