@@ -2,11 +2,11 @@
 
 pkgname=nightcore
 _pkgname=nightcore
-pkgver=2026.10.17
+pkgver=2026.10.21
 pkgrel=1
 # Full upstream version as written in pyproject.toml (pkgver itself may not
 # contain a hyphen, so the -4 lives here and in pkgrel).
-_pkgver=2026.10.17-1
+_pkgver=2026.10.21-1
 _tag=v${_pkgver}
 pkgdesc="Bit-perfect nightcore/speed/pitch audio tool (ffmpeg, sox, rubberband)"
 arch=('any')
@@ -34,7 +34,7 @@ conflicts=("$_pkgname-git")
 source=("${_pkgname}-${_pkgver}.tar.gz::${url}/releases/download/${_tag}/${_pkgname}-${_pkgver}.tar.gz"
         "${_pkgname}-${_pkgver}.tar.gz.sig::${url}/releases/download/${_tag}/${_pkgname}-${_pkgver}.tar.gz.sig")
 
-sha256sums=('47ae86ac395636c0dc13fdd3e3d37203bf5e97e8a791d6c60afb619379ae10ba'
+sha256sums=('3373606ebb1f0ae72eb48810bac64b1c677c662ac5db6381253b48a8fa87608e'
             'SKIP')
 validpgpkeys=('13EA3CFB9ABC093823509BD668C62637ED987692')
 
