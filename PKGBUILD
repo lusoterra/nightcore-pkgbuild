@@ -10,7 +10,7 @@ _pkgver=2026.10.21-1
 _tag=v${_pkgver}
 pkgdesc="Bit-perfect nightcore/speed/pitch audio tool (ffmpeg, sox, rubberband)"
 arch=('any')
-url="https://git.lusosterone.net/lev/nightcore"
+url="https://github.com/lusoterra/nightcore.py"
 license=('MIT')
 depends=(
     'python'
@@ -25,6 +25,7 @@ depends=(
 optdepends=(
     'lame: preferred MP3 encoder (ffmpeg libmp3lame fallback)'
     'qaac-wine: High-quality AAC/ALAC encoding (CoreAudio via Wine)'
+    'ffmpeg-full: FDK-AAC support'
     'bash-completion: bash completion'
     'zsh: zsh completion'
     'fish: fish completion'
